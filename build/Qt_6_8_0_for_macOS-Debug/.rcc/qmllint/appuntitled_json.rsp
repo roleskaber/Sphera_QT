@@ -1,0 +1,12 @@
+--bare
+-I
+/Users/admin/Documents/untitled/build/Qt_6_8_0_for_macOS-Debug
+-I
+/Users/admin/Qt/6.8.0/macos/qml
+--resource
+/Users/admin/Documents/untitled/build/Qt_6_8_0_for_macOS-Debug/.qt/rcc/qmake_untitled.qrc
+--resource
+/Users/admin/Documents/untitled/build/Qt_6_8_0_for_macOS-Debug/.qt/rcc/appuntitled_raw_qml_0.qrc
+/Users/admin/Documents/untitled/Main.qml
+--json
+/Users/admin/Documents/untitled/build/Qt_6_8_0_for_macOS-Debug/appuntitled_qmllint.json
