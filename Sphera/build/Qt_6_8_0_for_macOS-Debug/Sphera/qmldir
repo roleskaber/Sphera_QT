@@ -1,0 +1,5 @@
+module Sphera
+typeinfo appSphera.qmltypes
+prefer :/qt/qml/Sphera/
+Main 1.0 Main.qml
+

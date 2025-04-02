@@ -1,0 +1,14 @@
+-rootPath
+/Users/admin/Documents/GitHub/Sphera_QT/Sphera
+-cmake-output
+-output-file
+/Users/admin/Documents/GitHub/Sphera_QT/Sphera/build/Qt_6_8_0_for_macOS-Debug/.qt/qml_imports/appSphera_conf.cmake
+-importPath
+/Users/admin/Documents/GitHub/Sphera_QT/Sphera/build/Qt_6_8_0_for_macOS-Debug/Sphera
+-importPath
+/Users/admin/Documents/GitHub/Sphera_QT/Sphera/build/Qt_6_8_0_for_macOS-Debug
+-importPath
+/Users/admin/Qt/6.8.0/macos/qml
+-qrcFiles
+/Users/admin/Documents/GitHub/Sphera_QT/Sphera/build/Qt_6_8_0_for_macOS-Debug/.qt/rcc/qmake_Sphera.qrc
+/Users/admin/Documents/GitHub/Sphera_QT/Sphera/build/Qt_6_8_0_for_macOS-Debug/.qt/rcc/appSphera_raw_qml_0.qrc

@@ -1,0 +1,11 @@
+<RCC>
+  <qresource prefix="/qt/qml/Sphera/">
+    <file alias="Main.qml">/Users/admin/Documents/GitHub/Sphera_QT/Sphera/Main.qml</file>
+    <file alias="Icons/book.png">/Users/admin/Documents/GitHub/Sphera_QT/Sphera/Icons/book.png</file>
+    <file alias="Icons/play.png">/Users/admin/Documents/GitHub/Sphera_QT/Sphera/Icons/play.png</file>
+    <file alias="Icons/settings.png">/Users/admin/Documents/GitHub/Sphera_QT/Sphera/Icons/settings.png</file>
+    <file alias="Icons/stack.png">/Users/admin/Documents/GitHub/Sphera_QT/Sphera/Icons/stack.png</file>
+    <file alias="Icons/timelapse.png">/Users/admin/Documents/GitHub/Sphera_QT/Sphera/Icons/timelapse.png</file>
+  </qresource>
+</RCC>
+
