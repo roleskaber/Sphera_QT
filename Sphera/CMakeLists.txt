@@ -18,6 +18,9 @@ qt_add_qml_module(appSphera
     QML_FILES
         Main.qml
         RESOURCES Icons/book.png Icons/play.png Icons/settings.png Icons/stack.png Icons/timelapse.png
+        RESOURCES Icons/plus.png Icons/pause.png Icons/pause.svg Icons/play.svg
+        RESOURCES Icons/book.svg Icons/plus.png
+        RESOURCES Icons/plus.svg Icons/settings.svg Icons/stack.svg Icons/timelapse.svg Icons/book.svg
 )
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.

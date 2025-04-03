@@ -5,115 +5,283 @@
                 "entries": [
                     {
                         "codegenSuccessfull": false,
-                        "column": 20,
-                        "durationMicroseconds": 1,
-                        "errorMessage": "Cannot resolve property type  for binding on x.",
-                        "functionName": "x",
-                        "line": 12
+                        "column": 9,
+                        "durationMicroseconds": 722,
+                        "errorMessage": "Cannot generate efficient code for call to untyped JavaScript function",
+                        "functionName": "loadMusicCatalog",
+                        "line": 70
                     },
                     {
                         "codegenSuccessfull": false,
-                        "column": 37,
+                        "column": 5,
                         "durationMicroseconds": 0,
-                        "errorMessage": "Cannot resolve property type  for binding on verticalCenter.",
-                        "functionName": "verticalCenter",
-                        "line": 14
+                        "errorMessage": "Functions without type annotations won't be compiled",
+                        "functionName": "saveMusicFile",
+                        "line": 208
                     },
                     {
-                        "codegenSuccessfull": true,
-                        "column": 35,
-                        "durationMicroseconds": 288,
-                        "errorMessage": "",
-                        "functionName": "fillMode",
-                        "line": 25
+                        "codegenSuccessfull": false,
+                        "column": 5,
+                        "durationMicroseconds": 404,
+                        "errorMessage": "Cannot generate efficient code for call to untyped JavaScript function",
+                        "functionName": "loadMusicFile",
+                        "line": 216
                     },
                     {
-                        "codegenSuccessfull": true,
-                        "column": 43,
-                        "durationMicroseconds": 82,
-                        "errorMessage": "",
-                        "functionName": "centerIn",
+                        "codegenSuccessfull": false,
+                        "column": 17,
+                        "durationMicroseconds": 78,
+                        "errorMessage": "Cannot access value for name musicFile",
+                        "functionName": "source",
                         "line": 22
                     },
                     {
                         "codegenSuccessfull": true,
-                        "column": 37,
-                        "durationMicroseconds": 146,
+                        "column": 22,
+                        "durationMicroseconds": 91,
                         "errorMessage": "",
-                        "functionName": "verticalCenter",
-                        "line": 39
+                        "functionName": "audioOutput",
+                        "line": 23
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 24,
+                        "durationMicroseconds": 79,
+                        "errorMessage": "",
+                        "functionName": "model",
+                        "line": 34
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 31,
+                        "durationMicroseconds": 64,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 33
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 28,
-                        "durationMicroseconds": 126,
+                        "durationMicroseconds": 107,
                         "errorMessage": "",
-                        "functionName": "right",
-                        "line": 40
+                        "functionName": "width",
+                        "line": 36
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 32,
+                        "durationMicroseconds": 89,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 39
                     },
                     {
                         "codegenSuccessfull": false,
-                        "column": 27,
-                        "durationMicroseconds": 71,
-                        "errorMessage": "Cannot generate efficient code for internal conversion with incompatible or ambiguous types: void -> QQuickAnchorLine stored as QVariant",
-                        "functionName": "left",
-                        "line": 42
-                    },
-                    {
-                        "codegenSuccessfull": true,
                         "column": 35,
-                        "durationMicroseconds": 134,
-                        "errorMessage": "",
-                        "functionName": "left",
-                        "line": 48
+                        "durationMicroseconds": 234,
+                        "errorMessage": "Cannot access value for name path",
+                        "functionName": "text",
+                        "line": 46
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 40,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Cannot resolve property type  for binding on onClicked.",
+                        "functionName": "onClicked",
+                        "line": 55
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 40,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Cannot resolve property type  for binding on right.",
+                        "functionName": "right",
+                        "line": 51
                     },
                     {
                         "codegenSuccessfull": true,
-                        "column": 45,
-                        "durationMicroseconds": 134,
+                        "column": 19,
+                        "durationMicroseconds": 100,
                         "errorMessage": "",
-                        "functionName": "verticalCenter",
-                        "line": 49
+                        "functionName": "fileMode",
+                        "line": 84
                     },
                     {
                         "codegenSuccessfull": true,
-                        "column": 47,
-                        "durationMicroseconds": 94,
+                        "column": 22,
+                        "durationMicroseconds": 135,
                         "errorMessage": "",
-                        "functionName": "fillMode",
-                        "line": 63
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 47,
-                        "durationMicroseconds": 85,
-                        "errorMessage": "",
-                        "functionName": "fillMode",
+                        "functionName": "nameFilters",
                         "line": 85
                     },
                     {
-                        "codegenSuccessfull": true,
-                        "column": 47,
-                        "durationMicroseconds": 84,
-                        "errorMessage": "",
-                        "functionName": "fillMode",
+                        "codegenSuccessfull": false,
+                        "column": 21,
+                        "durationMicroseconds": 144,
+                        "errorMessage": "Cannot find name musicFile",
+                        "functionName": "onAccepted",
+                        "line": 86
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 18,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Cannot resolve property type  for binding on display.",
+                        "functionName": "display",
                         "line": 107
                     },
                     {
                         "codegenSuccessfull": false,
-                        "column": 34,
+                        "column": 24,
                         "durationMicroseconds": 0,
-                        "errorMessage": "Cannot resolve property type  for binding on display.",
-                        "functionName": "display",
+                        "errorMessage": "Cannot resolve property type  for binding on onClicked.",
+                        "functionName": "onClicked",
+                        "line": 109
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 18,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Cannot resolve property type  for binding on top.",
+                        "functionName": "top",
+                        "line": 101
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 20,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Cannot resolve property type  for binding on right.",
+                        "functionName": "right",
+                        "line": 102
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 12,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Cannot resolve property type  for binding on x.",
+                        "functionName": "x",
+                        "line": 114
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 20,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Cannot resolve property type  for binding on onClicked.",
+                        "functionName": "onClicked",
                         "line": 119
                     },
                     {
+                        "codegenSuccessfull": false,
+                        "column": 29,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Cannot resolve property type  for binding on verticalCenter.",
+                        "functionName": "verticalCenter",
+                        "line": 116
+                    },
+                    {
                         "codegenSuccessfull": true,
-                        "column": 47,
-                        "durationMicroseconds": 85,
+                        "column": 27,
+                        "durationMicroseconds": 96,
                         "errorMessage": "",
                         "functionName": "fillMode",
+                        "line": 133
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 25,
+                        "durationMicroseconds": 473,
+                        "errorMessage": "",
+                        "functionName": "source",
+                        "line": 134
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 35,
+                        "durationMicroseconds": 63,
+                        "errorMessage": "",
+                        "functionName": "centerIn",
                         "line": 130
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 29,
+                        "durationMicroseconds": 131,
+                        "errorMessage": "",
+                        "functionName": "verticalCenter",
+                        "line": 144
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 20,
+                        "durationMicroseconds": 118,
+                        "errorMessage": "",
+                        "functionName": "right",
+                        "line": 145
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 19,
+                        "durationMicroseconds": 66,
+                        "errorMessage": "Cannot generate efficient code for internal conversion with incompatible or ambiguous types: void -> QQuickAnchorLine stored as QVariant",
+                        "functionName": "left",
+                        "line": 146
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 31,
+                        "durationMicroseconds": 60,
+                        "errorMessage": "",
+                        "functionName": "centerIn",
+                        "line": 153
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 26,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Cannot resolve property type  for binding on display.",
+                        "functionName": "display",
+                        "line": 165
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 26,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Cannot resolve property type  for binding on display.",
+                        "functionName": "display",
+                        "line": 175
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 28,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Cannot resolve property type  for binding on onClicked.",
+                        "functionName": "onClicked",
+                        "line": 176
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 26,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Cannot resolve property type  for binding on display.",
+                        "functionName": "display",
+                        "line": 189
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 26,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Cannot resolve property type  for binding on display.",
+                        "functionName": "display",
+                        "line": 200
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 32,
+                        "durationMicroseconds": 73,
+                        "errorMessage": "",
+                        "functionName": "onCompleted",
+                        "line": 226
                     }
                 ],
                 "filepath": "/Users/admin/Documents/GitHub/Sphera_QT/Sphera/build/Qt_6_8_0_for_macOS-Debug/Main.qml"

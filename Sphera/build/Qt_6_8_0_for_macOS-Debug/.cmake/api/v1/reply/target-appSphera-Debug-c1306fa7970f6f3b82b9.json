@@ -96,13 +96,13 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 39,
+				"line" : 42,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 34,
+				"line" : 37,
 				"parent" : 0
 			},
 			{
@@ -888,16 +888,16 @@
 			"sourceIndexes" : 
 			[
 				0,
-				17,
 				26,
-				27,
-				28,
-				29,
-				30,
-				31,
-				32,
-				33,
-				34
+				35,
+				36,
+				37,
+				38,
+				39,
+				40,
+				41,
+				42,
+				43
 			]
 		},
 		{
@@ -920,7 +920,14 @@
 				5,
 				9,
 				10,
-				11
+				11,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25
 			]
 		},
 		{
@@ -931,21 +938,23 @@
 				13,
 				14,
 				15,
-				16
+				16,
+				17,
+				18
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				18,
-				19,
-				20,
-				21,
-				22,
-				23,
-				24,
-				25
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34
 			]
 		}
 	],
@@ -1052,6 +1061,51 @@
 			"backtrace" : 80,
 			"path" : "Icons/timelapse.png",
 			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 80,
+			"path" : "Icons/plus.png",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 80,
+			"path" : "Icons/pause.png",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 80,
+			"path" : "Icons/pause.svg",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 80,
+			"path" : "Icons/play.svg",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 80,
+			"path" : "Icons/book.svg",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 80,
+			"path" : "Icons/plus.svg",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 80,
+			"path" : "Icons/settings.svg",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 80,
+			"path" : "Icons/stack.svg",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 80,
+			"path" : "Icons/timelapse.svg",
+			"sourceGroupIndex" : 2
 		},
 		{
 			"backtrace" : 0,

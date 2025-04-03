@@ -1,0 +1,18 @@
+{
+    "classes": [
+        {
+            "className": "MusicCatalog",
+            "lineNumber": 6,
+            "object": true,
+            "qualifiedClassName": "MusicCatalog",
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QAbstractItemModel"
+                }
+            ]
+        }
+    ],
+    "inputFile": "musiccatalog.h",
+    "outputRevision": 68
+}
