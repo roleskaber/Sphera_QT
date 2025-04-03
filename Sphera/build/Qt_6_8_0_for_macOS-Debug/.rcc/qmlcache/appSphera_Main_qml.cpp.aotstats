@@ -4,17 +4,25 @@
             {
                 "entries": [
                     {
-                        "codegenSuccessfull": true,
-                        "column": 27,
-                        "durationMicroseconds": 379,
-                        "errorMessage": "",
-                        "functionName": "centerIn",
+                        "codegenSuccessfull": false,
+                        "column": 20,
+                        "durationMicroseconds": 1,
+                        "errorMessage": "Cannot resolve property type  for binding on x.",
+                        "functionName": "x",
                         "line": 12
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 37,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Cannot resolve property type  for binding on verticalCenter.",
+                        "functionName": "verticalCenter",
+                        "line": 14
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 35,
-                        "durationMicroseconds": 158,
+                        "durationMicroseconds": 288,
                         "errorMessage": "",
                         "functionName": "fillMode",
                         "line": 25
@@ -22,50 +30,74 @@
                     {
                         "codegenSuccessfull": true,
                         "column": 43,
-                        "durationMicroseconds": 75,
+                        "durationMicroseconds": 82,
                         "errorMessage": "",
                         "functionName": "centerIn",
                         "line": 22
                     },
                     {
                         "codegenSuccessfull": true,
-                        "column": 35,
+                        "column": 37,
                         "durationMicroseconds": 146,
                         "errorMessage": "",
-                        "functionName": "left",
+                        "functionName": "verticalCenter",
+                        "line": 39
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 28,
+                        "durationMicroseconds": 126,
+                        "errorMessage": "",
+                        "functionName": "right",
                         "line": 40
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 27,
+                        "durationMicroseconds": 71,
+                        "errorMessage": "Cannot generate efficient code for internal conversion with incompatible or ambiguous types: void -> QQuickAnchorLine stored as QVariant",
+                        "functionName": "left",
+                        "line": 42
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 35,
+                        "durationMicroseconds": 134,
+                        "errorMessage": "",
+                        "functionName": "left",
+                        "line": 48
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 45,
-                        "durationMicroseconds": 122,
+                        "durationMicroseconds": 134,
                         "errorMessage": "",
                         "functionName": "verticalCenter",
-                        "line": 41
+                        "line": 49
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 47,
-                        "durationMicroseconds": 103,
+                        "durationMicroseconds": 94,
                         "errorMessage": "",
                         "functionName": "fillMode",
-                        "line": 55
+                        "line": 63
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 47,
-                        "durationMicroseconds": 86,
+                        "durationMicroseconds": 85,
                         "errorMessage": "",
                         "functionName": "fillMode",
-                        "line": 77
+                        "line": 85
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 47,
-                        "durationMicroseconds": 115,
+                        "durationMicroseconds": 84,
                         "errorMessage": "",
                         "functionName": "fillMode",
-                        "line": 99
+                        "line": 107
                     },
                     {
                         "codegenSuccessfull": false,
@@ -73,15 +105,15 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Cannot resolve property type  for binding on display.",
                         "functionName": "display",
-                        "line": 111
+                        "line": 119
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 47,
-                        "durationMicroseconds": 88,
+                        "durationMicroseconds": 85,
                         "errorMessage": "",
                         "functionName": "fillMode",
-                        "line": 122
+                        "line": 130
                     }
                 ],
                 "filepath": "/Users/admin/Documents/GitHub/Sphera_QT/Sphera/build/Qt_6_8_0_for_macOS-Debug/Main.qml"

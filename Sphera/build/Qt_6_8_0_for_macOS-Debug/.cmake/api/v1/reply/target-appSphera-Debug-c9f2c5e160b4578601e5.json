@@ -737,19 +737,19 @@
 	"dependencies" : 
 	[
 		{
-			"id" : "appSphera_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
-		},
-		{
-			"backtrace" : 0,
-			"id" : "appSphera_autogen::@6890427a1f51a3e7e1df"
-		},
-		{
 			"backtrace" : 53,
 			"id" : "appSphera_tooling::@6890427a1f51a3e7e1df"
 		},
 		{
 			"backtrace" : 60,
 			"id" : "appSphera_qmlimportscan::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "appSphera_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "appSphera_autogen::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "appSphera::@6890427a1f51a3e7e1df",

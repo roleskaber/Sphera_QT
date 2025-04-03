@@ -1,3 +1,5 @@
+#include <QCommandLineParser>
+#include <QDir>
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
 

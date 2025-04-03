@@ -3,16 +3,16 @@ import QtQuick.Layouts
 import QtQuick.Controls
 
 Window {
+
     width: 1000
     height: 600
     visible: true
     title: qsTr("Sphera")
-
-    RowLayout{
-        anchors.centerIn: parent
-            spacing: 324
-
             Button {
+                x: parent.width/2 - 169
+                anchors {
+                    verticalCenter: parent.verticalCenter
+                }
                 background: Rectangle {
                     height: 64
                     width: 64
@@ -32,15 +32,23 @@ Window {
 
 
             Rectangle{
-                Layout.preferredHeight: 240
-                Layout.preferredWidth: 290
+                // id: MenuRow
+                width: 290
+                height: 240
+                anchors {
+                    verticalCenter: parent.verticalCenter
+                    right: parent.right
+                    rightMargin: 44
+                    left: undefined
+
+                }
                 radius: 10
                 color: "#EEEEEE"
                 ColumnLayout{
                     anchors.left: parent.left
                     anchors.verticalCenter: parent.verticalCenter
                     anchors.leftMargin: 44
-                    spacing: 24
+                    spacing: 30
                     Button {
                         background: Rectangle{
                             Layout.preferredHeight: 29
@@ -134,10 +142,6 @@ Window {
                 }
 
             }
-
-
-        }
-
 
 
 }
