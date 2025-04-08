@@ -1,17 +1,9 @@
 <RCC>
   <qresource prefix="/qt/qml/Sphera/">
     <file alias="Main.qml">/Users/admin/Documents/GitHub/Sphera_QT/Sphera/Main.qml</file>
-    <file alias="Icons/book.png">/Users/admin/Documents/GitHub/Sphera_QT/Sphera/Icons/book.png</file>
-    <file alias="Icons/play.png">/Users/admin/Documents/GitHub/Sphera_QT/Sphera/Icons/play.png</file>
-    <file alias="Icons/settings.png">/Users/admin/Documents/GitHub/Sphera_QT/Sphera/Icons/settings.png</file>
-    <file alias="Icons/stack.png">/Users/admin/Documents/GitHub/Sphera_QT/Sphera/Icons/stack.png</file>
-    <file alias="Icons/timelapse.png">/Users/admin/Documents/GitHub/Sphera_QT/Sphera/Icons/timelapse.png</file>
-    <file alias="Icons/plus.png">/Users/admin/Documents/GitHub/Sphera_QT/Sphera/Icons/plus.png</file>
-    <file alias="Icons/pause.png">/Users/admin/Documents/GitHub/Sphera_QT/Sphera/Icons/pause.png</file>
     <file alias="Icons/pause.svg">/Users/admin/Documents/GitHub/Sphera_QT/Sphera/Icons/pause.svg</file>
     <file alias="Icons/play.svg">/Users/admin/Documents/GitHub/Sphera_QT/Sphera/Icons/play.svg</file>
     <file alias="Icons/book.svg">/Users/admin/Documents/GitHub/Sphera_QT/Sphera/Icons/book.svg</file>
-    <file alias="Icons/plus.png">/Users/admin/Documents/GitHub/Sphera_QT/Sphera/Icons/plus.png</file>
     <file alias="Icons/plus.svg">/Users/admin/Documents/GitHub/Sphera_QT/Sphera/Icons/plus.svg</file>
     <file alias="Icons/settings.svg">/Users/admin/Documents/GitHub/Sphera_QT/Sphera/Icons/settings.svg</file>
     <file alias="Icons/stack.svg">/Users/admin/Documents/GitHub/Sphera_QT/Sphera/Icons/stack.svg</file>

@@ -424,6 +424,9 @@ Window {
                 font.pixelSize: 20
                 icon.source: "Icons/stack.svg"
                 icon.color: "transparent"
+
+                icon.height: 37
+                icon.width: 41
                 display: Button.TextBesideIcon
                 onClicked: {
                     loadFavorites()
@@ -438,6 +441,8 @@ Window {
                 spacing: 30
                 icon.source: "Icons/timelapse.svg"
                 icon.color: "transparent"
+                icon.height: 37
+                icon.width: 37
                 display: Button.TextBesideIcon
                 onClicked: {
                     loadMusicCatalog()
@@ -452,6 +457,8 @@ Window {
                 spacing: 105
                 icon.source: "Icons/book.svg"
                 icon.color: "transparent"
+                icon.height: 37
+                icon.width: 39
                 display: Button.TextBesideIcon
                 onClicked: {
                     book.show()
@@ -465,6 +472,8 @@ Window {
                 font.pixelSize: 20
                 icon.source: "Icons/settings.svg"
                 icon.color: "transparent"
+                icon.height: 37
+                icon.width: 37
                 display: Button.TextBesideIcon
             }
         }
