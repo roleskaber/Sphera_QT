@@ -181,7 +181,7 @@ build module_appSphera_aotstats_targets: phony CMakeFiles/module_appSphera_aotst
 #############################################
 # Utility command for appSphera_tooling
 
-build appSphera_tooling: phony Sphera/Main.qml Sphera/Icons/pause.svg Sphera/Icons/play.svg Sphera/Icons/book.svg Sphera/Icons/plus.svg Sphera/Icons/settings.svg Sphera/Icons/stack.svg Sphera/Icons/timelapse.svg Sphera/Icons/Background.png
+build appSphera_tooling: phony Sphera/Main.qml Sphera/Icons/pause.svg Sphera/Icons/play.svg Sphera/Icons/book.svg Sphera/Icons/plus.svg Sphera/Icons/settings.svg Sphera/Icons/stack.svg Sphera/Icons/timelapse.svg Sphera/Icons/Background.png Sphera/Icons/heart_0.svg Sphera/Icons/heart.svg
 
 
 #############################################
@@ -322,7 +322,7 @@ build .rcc/qmlcache/appSphera_Main_qml.cpp .rcc/qmlcache/appSphera_Main_qml.cpp.
 #############################################
 # Custom command for .qt/rcc/qrc_appSphera_raw_qml_0.cpp
 
-build .qt/rcc/qrc_appSphera_raw_qml_0.cpp | ${cmake_ninja_workdir}.qt/rcc/qrc_appSphera_raw_qml_0.cpp: CUSTOM_COMMAND /Users/admin/Documents/GitHub/Sphera_QT/Sphera/Main.qml /Users/admin/Documents/GitHub/Sphera_QT/Sphera/Icons/pause.svg /Users/admin/Documents/GitHub/Sphera_QT/Sphera/Icons/play.svg /Users/admin/Documents/GitHub/Sphera_QT/Sphera/Icons/book.svg /Users/admin/Documents/GitHub/Sphera_QT/Sphera/Icons/plus.svg /Users/admin/Documents/GitHub/Sphera_QT/Sphera/Icons/settings.svg /Users/admin/Documents/GitHub/Sphera_QT/Sphera/Icons/stack.svg /Users/admin/Documents/GitHub/Sphera_QT/Sphera/Icons/timelapse.svg /Users/admin/Documents/GitHub/Sphera_QT/Sphera/Icons/book.svg /Users/admin/Documents/GitHub/Sphera_QT/Sphera/Icons/Background.png .qt/rcc/appSphera_raw_qml_0.qrc /Users/admin/Qt/6.8.0/macos/libexec/rcc || appSphera_autogen appSphera_autogen_timestamp_deps appSphera_qmlimportscan appSphera_tooling
+build .qt/rcc/qrc_appSphera_raw_qml_0.cpp | ${cmake_ninja_workdir}.qt/rcc/qrc_appSphera_raw_qml_0.cpp: CUSTOM_COMMAND /Users/admin/Documents/GitHub/Sphera_QT/Sphera/Main.qml /Users/admin/Documents/GitHub/Sphera_QT/Sphera/Icons/pause.svg /Users/admin/Documents/GitHub/Sphera_QT/Sphera/Icons/play.svg /Users/admin/Documents/GitHub/Sphera_QT/Sphera/Icons/book.svg /Users/admin/Documents/GitHub/Sphera_QT/Sphera/Icons/plus.svg /Users/admin/Documents/GitHub/Sphera_QT/Sphera/Icons/settings.svg /Users/admin/Documents/GitHub/Sphera_QT/Sphera/Icons/stack.svg /Users/admin/Documents/GitHub/Sphera_QT/Sphera/Icons/timelapse.svg /Users/admin/Documents/GitHub/Sphera_QT/Sphera/Icons/book.svg /Users/admin/Documents/GitHub/Sphera_QT/Sphera/Icons/Background.png /Users/admin/Documents/GitHub/Sphera_QT/Sphera/Icons/heart_0.svg /Users/admin/Documents/GitHub/Sphera_QT/Sphera/Icons/heart.svg /Users/admin/Documents/GitHub/Sphera_QT/Sphera/Icons/Background.png .qt/rcc/appSphera_raw_qml_0.qrc /Users/admin/Qt/6.8.0/macos/libexec/rcc || appSphera_autogen appSphera_autogen_timestamp_deps appSphera_qmlimportscan appSphera_tooling
   COMMAND = cd /Users/admin/Documents/GitHub/Sphera_QT/Sphera/build/Qt_6_8_0_for_macOS-Debug && /Users/admin/Qt/6.8.0/macos/libexec/rcc --output /Users/admin/Documents/GitHub/Sphera_QT/Sphera/build/Qt_6_8_0_for_macOS-Debug/.qt/rcc/qrc_appSphera_raw_qml_0.cpp --name appSphera_raw_qml_0 /Users/admin/Documents/GitHub/Sphera_QT/Sphera/build/Qt_6_8_0_for_macOS-Debug/.qt/rcc/appSphera_raw_qml_0.qrc --no-zstd
   DESC = Running rcc for resource appSphera_raw_qml_0
   restat = 1
@@ -468,6 +468,24 @@ build Sphera/Icons/timelapse.svg | ${cmake_ninja_workdir}Sphera/Icons/timelapse.
 build Sphera/Icons/Background.png | ${cmake_ninja_workdir}Sphera/Icons/Background.png: CUSTOM_COMMAND /Users/admin/Documents/GitHub/Sphera_QT/Sphera/Icons/Background.png
   COMMAND = cd /Users/admin/Documents/GitHub/Sphera_QT/Sphera && /Users/admin/Qt/Tools/CMake/CMake.app/Contents/bin/cmake -E copy /Users/admin/Documents/GitHub/Sphera_QT/Sphera/Icons/Background.png /Users/admin/Documents/GitHub/Sphera_QT/Sphera/build/Qt_6_8_0_for_macOS-Debug/Sphera/Icons/Background.png
   DESC = Copying Icons/Background.png to /Users/admin/Documents/GitHub/Sphera_QT/Sphera/build/Qt_6_8_0_for_macOS-Debug/Sphera/Icons/Background.png
+  restat = 1
+
+
+#############################################
+# Custom command for Sphera/Icons/heart_0.svg
+
+build Sphera/Icons/heart_0.svg | ${cmake_ninja_workdir}Sphera/Icons/heart_0.svg: CUSTOM_COMMAND /Users/admin/Documents/GitHub/Sphera_QT/Sphera/Icons/heart_0.svg
+  COMMAND = cd /Users/admin/Documents/GitHub/Sphera_QT/Sphera && /Users/admin/Qt/Tools/CMake/CMake.app/Contents/bin/cmake -E copy /Users/admin/Documents/GitHub/Sphera_QT/Sphera/Icons/heart_0.svg /Users/admin/Documents/GitHub/Sphera_QT/Sphera/build/Qt_6_8_0_for_macOS-Debug/Sphera/Icons/heart_0.svg
+  DESC = Copying Icons/heart_0.svg to /Users/admin/Documents/GitHub/Sphera_QT/Sphera/build/Qt_6_8_0_for_macOS-Debug/Sphera/Icons/heart_0.svg
+  restat = 1
+
+
+#############################################
+# Custom command for Sphera/Icons/heart.svg
+
+build Sphera/Icons/heart.svg | ${cmake_ninja_workdir}Sphera/Icons/heart.svg: CUSTOM_COMMAND /Users/admin/Documents/GitHub/Sphera_QT/Sphera/Icons/heart.svg
+  COMMAND = cd /Users/admin/Documents/GitHub/Sphera_QT/Sphera && /Users/admin/Qt/Tools/CMake/CMake.app/Contents/bin/cmake -E copy /Users/admin/Documents/GitHub/Sphera_QT/Sphera/Icons/heart.svg /Users/admin/Documents/GitHub/Sphera_QT/Sphera/build/Qt_6_8_0_for_macOS-Debug/Sphera/Icons/heart.svg
+  DESC = Copying Icons/heart.svg to /Users/admin/Documents/GitHub/Sphera_QT/Sphera/build/Qt_6_8_0_for_macOS-Debug/Sphera/Icons/heart.svg
   restat = 1
 
 

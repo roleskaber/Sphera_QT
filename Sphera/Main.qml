@@ -7,7 +7,7 @@ import QtQuick.Dialogs
 import QtQuick.LocalStorage 2.0
 
 Window {
-    color: "black"
+    color: "white"
     width: 1000
     height: 600
     visible: true
@@ -35,13 +35,14 @@ Window {
         color: "white"
         visible: false
         ListView {
+            Layout.fillWidth: true
             anchors.fill: parent
             model: musicModel
             delegate: Item {
                 width: parent.width
                 height: 40
                 Rectangle {
-                    width: parent.width
+                    width: parent.width == null ? 0 : parent.width
                     height: 44
                     color: "#EEEEEE"
                     anchors {
@@ -67,6 +68,9 @@ Window {
                         }
                         Button {
                             text: isFavorite ? "★" : "☆"
+                            icon.source: isFavorite ? "Icons/heart.svg" : "Icons/heart_0.svg"
+                            icon.color: "transparent"
+                            display: Button.IconOnly
                             onClicked: {
                                 if (isFavorite) {
                                     removeFromFavorites(path)
@@ -122,6 +126,7 @@ Window {
                             }
                         }
                         Button {
+
                             text: "★"
                             onClicked: {
                                 removeFromFavorites(path)
@@ -362,24 +367,35 @@ Window {
     Button {
         height: 44
         width: 65
+        background: Rectangle {
+            color : "#848D8B"
+            radius: 10
 
+        }
         anchors {
             top: parent.top
             right: parent.right
             margins: 44
         }
         icon.source: "Icons/plus.svg"
-        icon.color: "transparent"
+        icon.color: "white"
         display: Button.IconOnly
         text: ""
             onClicked: fileDialog.open()
     }
 
-    Button {
+    Column {
+        width: 120
+        height: 120
         x: parent.width/2 - 169
         anchors {
             verticalCenter: parent.verticalCenter
         }
+        spacing: 20
+    Button {
+        anchors.horizontalCenter: parent.horizontalCenter
+        width: 70
+        height: 70
 
         onClicked: {
             if (player.playbackState === MediaPlayer.PlayingState) {
@@ -391,90 +407,82 @@ Window {
 
         background: Rectangle {
             radius: 10
-            Image {
-                anchors.centerIn: parent
-                width: 56
-                height: 56
-                fillMode: Image.Pad
-                source: player.playbackState === MediaPlayer.PlayingState ? "Icons/pause.svg" : "Icons/play.svg"
-            }
+            color: "#D7D7D7"
+            opacity: 0
         }
+        Image {
+            anchors.centerIn: parent
+            width: 56
+            height: 56
+            fillMode: Image.Pad
+            source: player.playbackState === MediaPlayer.PlayingState ? "Icons/pause.svg" : "Icons/play.svg"
+        }
+    }
+    Text {
+        anchors.horizontalCenter: parent.horizontalCenter
+        text: qsTr("Сейчас играет: " + musicFile.split('/').pop().split('.').slice(0, -1).join('.'))
+        font.pixelSize: 18
+        opacity: 60
+        color: "white"
+    }
     }
 
     Rectangle {
-        width: 290
-        height: 240
+        width: 263
+        height: 226
         anchors {
             verticalCenter: parent.verticalCenter
             right: parent.right
-            left: undefined
             rightMargin: 44
         }
+
         radius: 10
-        color: "#EEEEEE"
-        ColumnLayout {
-            anchors.centerIn: parent
-            spacing: 4
+        color: "#848D8B"
+        Column {
+            topPadding: 20
+            bottomPadding: 20
+            anchors.verticalCenter: parent.verticalCenter
+            spacing: 5
 
-            Button {
-                Layout.preferredWidth: 271
-                Layout.preferredHeight: 50
-                text: "Коллекция"
-                spacing: 90
-                font.pixelSize: 20
-                icon.source: "Icons/stack.svg"
-                icon.color: "transparent"
+            // Общий компонент для всех кнопок
+            Repeater {
+                model: [
+                    { icon: "Icons/stack.svg", text: "Коллекция", width: 30, handler: function() { loadFavorites(); favoritesWindow.show() } },
+                    { icon: "Icons/timelapse.svg", text: "История", width: 27, handler: function() { loadMusicCatalog(); musicCatalog.show() } },
+                    { icon: "Icons/book.svg", text: "Дневник", width: 28, handler: function() { book.show() } },
+                    { icon: "Icons/settings.svg", text: "Настройки", width: 26 }
+                ]
 
-                icon.height: 37
-                icon.width: 41
-                display: Button.TextBesideIcon
-                onClicked: {
-                    loadFavorites()
-                    favoritesWindow.show()
+                Button {
+                    Layout.preferredWidth: 271
+                    Layout.preferredHeight: 50
+
+
+                    background: Rectangle {
+                        color: "transparent"
+                    }
+
+                    contentItem: Row {
+
+                        spacing: 25
+                        leftPadding: 30
+                        anchors.verticalCenter: parent.verticalCenter
+
+                        Image {
+                            source: modelData.icon
+                            width: modelData.width
+                            height: 26
+                        }
+
+                        Text {
+                            text: modelData.text
+                            font.pixelSize: 20
+                            color: "white"
+                        }
+                    }
+
+                    onClicked: if (modelData.handler) modelData.handler()
                 }
-            }
-            Button {
-                Layout.preferredWidth: 271
-                Layout.preferredHeight: 50
-                text: "Машина времени"
-                font.pixelSize: 20
-                spacing: 30
-                icon.source: "Icons/timelapse.svg"
-                icon.color: "transparent"
-                icon.height: 37
-                icon.width: 37
-                display: Button.TextBesideIcon
-                onClicked: {
-                    loadMusicCatalog()
-                    musicCatalog.show()
-                }
-            }
-            Button {
-                Layout.preferredWidth: 271
-                Layout.preferredHeight: 50
-                text: "Дневник"
-                font.pixelSize: 20
-                spacing: 105
-                icon.source: "Icons/book.svg"
-                icon.color: "transparent"
-                icon.height: 37
-                icon.width: 39
-                display: Button.TextBesideIcon
-                onClicked: {
-                    book.show()
-                }
-            }
-            Button {
-                Layout.preferredWidth: 271
-                Layout.preferredHeight: 50
-                text: "Настройки"
-                spacing: 85
-                font.pixelSize: 20
-                icon.source: "Icons/settings.svg"
-                icon.color: "transparent"
-                icon.height: 37
-                icon.width: 37
-                display: Button.TextBesideIcon
             }
         }
     }
@@ -496,6 +504,14 @@ Window {
                 player.source = musicFile
             }
         })
+    }
+
+    Image {
+        id: back
+        source: "Icons/Background.png"
+        width: parent.width
+        height: parent.height
+        z: -1
     }
 
     Component.onCompleted: loadMusicFile()

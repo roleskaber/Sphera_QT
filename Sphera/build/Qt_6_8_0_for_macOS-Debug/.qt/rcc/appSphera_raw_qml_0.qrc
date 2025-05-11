@@ -10,6 +10,9 @@
     <file alias="Icons/timelapse.svg">/Users/admin/Documents/GitHub/Sphera_QT/Sphera/Icons/timelapse.svg</file>
     <file alias="Icons/book.svg">/Users/admin/Documents/GitHub/Sphera_QT/Sphera/Icons/book.svg</file>
     <file alias="Icons/Background.png">/Users/admin/Documents/GitHub/Sphera_QT/Sphera/Icons/Background.png</file>
+    <file alias="Icons/heart_0.svg">/Users/admin/Documents/GitHub/Sphera_QT/Sphera/Icons/heart_0.svg</file>
+    <file alias="Icons/heart.svg">/Users/admin/Documents/GitHub/Sphera_QT/Sphera/Icons/heart.svg</file>
+    <file alias="Icons/Background.png">/Users/admin/Documents/GitHub/Sphera_QT/Sphera/Icons/Background.png</file>
   </qresource>
 </RCC>
 
