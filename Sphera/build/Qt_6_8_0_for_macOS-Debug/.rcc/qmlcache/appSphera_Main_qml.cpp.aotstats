@@ -6,18 +6,18 @@
                     {
                         "codegenSuccessfull": false,
                         "column": 5,
-                        "durationMicroseconds": 695,
+                        "durationMicroseconds": 2394,
                         "errorMessage": "Cannot generate efficient code for call to untyped JavaScript function",
                         "functionName": "loadMusicCatalog",
-                        "line": 267
+                        "line": 338
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 5,
-                        "durationMicroseconds": 464,
+                        "durationMicroseconds": 528,
                         "errorMessage": "Cannot generate efficient code for call to untyped JavaScript function",
                         "functionName": "loadFavorites",
-                        "line": 289
+                        "line": 356
                     },
                     {
                         "codegenSuccessfull": false,
@@ -25,7 +25,7 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Functions without type annotations won't be compiled",
                         "functionName": "addToFavorites",
-                        "line": 300
+                        "line": 367
                     },
                     {
                         "codegenSuccessfull": false,
@@ -33,7 +33,7 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Functions without type annotations won't be compiled",
                         "functionName": "removeFromFavorites",
-                        "line": 307
+                        "line": 374
                     },
                     {
                         "codegenSuccessfull": false,
@@ -41,15 +41,15 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Functions without type annotations won't be compiled",
                         "functionName": "saveNote",
-                        "line": 314
+                        "line": 381
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 5,
-                        "durationMicroseconds": 445,
+                        "durationMicroseconds": 461,
                         "errorMessage": "Cannot generate efficient code for call to untyped JavaScript function",
                         "functionName": "loadNotes",
-                        "line": 322
+                        "line": 389
                     },
                     {
                         "codegenSuccessfull": false,
@@ -57,7 +57,7 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Functions without type annotations won't be compiled",
                         "functionName": "deleteNote",
-                        "line": 339
+                        "line": 406
                     },
                     {
                         "codegenSuccessfull": false,
@@ -65,7 +65,7 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Functions without type annotations won't be compiled",
                         "functionName": "getMoodColor",
-                        "line": 347
+                        "line": 414
                     },
                     {
                         "codegenSuccessfull": false,
@@ -73,31 +73,31 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Functions without type annotations won't be compiled",
                         "functionName": "saveMusicFile",
-                        "line": 490
+                        "line": 579
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 5,
-                        "durationMicroseconds": 386,
+                        "durationMicroseconds": 413,
                         "errorMessage": "Cannot generate efficient code for call to untyped JavaScript function",
                         "functionName": "loadMusicFile",
-                        "line": 498
+                        "line": 587
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 17,
-                        "durationMicroseconds": 146,
+                        "durationMicroseconds": 116,
                         "errorMessage": "Cannot access value for name musicFile",
                         "functionName": "source",
-                        "line": 27
+                        "line": 28
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 22,
-                        "durationMicroseconds": 88,
+                        "durationMicroseconds": 91,
                         "errorMessage": "",
                         "functionName": "audioOutput",
-                        "line": 28
+                        "line": 29
                     },
                     {
                         "codegenSuccessfull": true,
@@ -105,47 +105,47 @@
                         "durationMicroseconds": 77,
                         "errorMessage": "",
                         "functionName": "model",
-                        "line": 40
+                        "line": 43
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 27,
-                        "durationMicroseconds": 66,
+                        "durationMicroseconds": 65,
                         "errorMessage": "",
                         "functionName": "fill",
-                        "line": 39
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 24,
-                        "durationMicroseconds": 253,
-                        "errorMessage": "",
-                        "functionName": "width",
                         "line": 42
                     },
                     {
                         "codegenSuccessfull": true,
-                        "column": 28,
-                        "durationMicroseconds": 375,
+                        "column": 24,
+                        "durationMicroseconds": 154,
                         "errorMessage": "",
                         "functionName": "width",
                         "line": 45
                     },
                     {
+                        "codegenSuccessfull": true,
+                        "column": 28,
+                        "durationMicroseconds": 357,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 48
+                    },
+                    {
                         "codegenSuccessfull": false,
                         "column": 31,
-                        "durationMicroseconds": 299,
+                        "durationMicroseconds": 238,
                         "errorMessage": "Cannot access value for name path",
                         "functionName": "text",
-                        "line": 52
+                        "line": 55
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 36,
-                        "durationMicroseconds": 138,
+                        "durationMicroseconds": 133,
                         "errorMessage": "",
                         "functionName": "right",
-                        "line": 57
+                        "line": 60
                     },
                     {
                         "codegenSuccessfull": false,
@@ -153,7 +153,7 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Cannot resolve property type  for binding on onClicked.",
                         "functionName": "onClicked",
-                        "line": 63
+                        "line": 67
                     },
                     {
                         "codegenSuccessfull": false,
@@ -161,7 +161,7 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Cannot resolve property type  for binding on text.",
                         "functionName": "text",
-                        "line": 70
+                        "line": 74
                     },
                     {
                         "codegenSuccessfull": false,
@@ -169,7 +169,7 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Cannot resolve property type  for binding on display.",
                         "functionName": "display",
-                        "line": 73
+                        "line": 77
                     },
                     {
                         "codegenSuccessfull": false,
@@ -177,7 +177,7 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Cannot resolve property type  for binding on onClicked.",
                         "functionName": "onClicked",
-                        "line": 74
+                        "line": 78
                     },
                     {
                         "codegenSuccessfull": false,
@@ -185,55 +185,55 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Cannot resolve property type  for binding on source.",
                         "functionName": "source",
-                        "line": 71
+                        "line": 75
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 20,
-                        "durationMicroseconds": 92,
+                        "durationMicroseconds": 86,
                         "errorMessage": "",
                         "functionName": "model",
-                        "line": 99
+                        "line": 103
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 27,
-                        "durationMicroseconds": 67,
+                        "durationMicroseconds": 61,
                         "errorMessage": "",
                         "functionName": "fill",
-                        "line": 98
+                        "line": 102
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 24,
-                        "durationMicroseconds": 109,
+                        "durationMicroseconds": 93,
                         "errorMessage": "",
                         "functionName": "width",
-                        "line": 101
+                        "line": 105
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 28,
-                        "durationMicroseconds": 103,
+                        "durationMicroseconds": 89,
                         "errorMessage": "",
                         "functionName": "width",
-                        "line": 104
+                        "line": 108
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 31,
-                        "durationMicroseconds": 234,
+                        "durationMicroseconds": 205,
                         "errorMessage": "Cannot access value for name path",
                         "functionName": "text",
-                        "line": 111
+                        "line": 115
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 36,
-                        "durationMicroseconds": 135,
+                        "durationMicroseconds": 136,
                         "errorMessage": "",
                         "functionName": "right",
-                        "line": 116
+                        "line": 120
                     },
                     {
                         "codegenSuccessfull": false,
@@ -241,7 +241,7 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Cannot resolve property type  for binding on onClicked.",
                         "functionName": "onClicked",
-                        "line": 122
+                        "line": 126
                     },
                     {
                         "codegenSuccessfull": false,
@@ -249,95 +249,159 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Cannot resolve property type  for binding on onClicked.",
                         "functionName": "onClicked",
-                        "line": 131
+                        "line": 135
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 27,
-                        "durationMicroseconds": 72,
+                        "durationMicroseconds": 69,
                         "errorMessage": "",
                         "functionName": "fill",
-                        "line": 150
+                        "line": 153
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 33,
+                        "durationMicroseconds": 207,
+                        "errorMessage": "",
+                        "functionName": "implicitHeight",
+                        "line": 160
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 35,
+                        "durationMicroseconds": 59,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 168
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 32,
+                        "durationMicroseconds": 109,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 173
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 36,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Cannot resolve property type  for binding on width.",
+                        "functionName": "width",
+                        "line": 178
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 40,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Cannot resolve property type  for binding on onClicked.",
+                        "functionName": "onClicked",
+                        "line": 192
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 32,
                         "durationMicroseconds": 0,
-                        "errorMessage": "Cannot resolve property type  for binding on onClicked.",
-                        "functionName": "onClicked",
-                        "line": 172
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 24,
-                        "durationMicroseconds": 85,
-                        "errorMessage": "",
-                        "functionName": "model",
-                        "line": 195
+                        "errorMessage": "Cannot resolve property type  for binding on width.",
+                        "functionName": "width",
+                        "line": 206
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 28,
-                        "durationMicroseconds": 99,
+                        "durationMicroseconds": 116,
                         "errorMessage": "",
-                        "functionName": "width",
-                        "line": 199
+                        "functionName": "model",
+                        "line": 225
                     },
                     {
                         "codegenSuccessfull": true,
-                        "column": 39,
-                        "durationMicroseconds": 59,
+                        "column": 40,
+                        "durationMicroseconds": 564,
+                        "errorMessage": "",
+                        "functionName": "onContentYChanged",
+                        "line": 230
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 35,
+                        "durationMicroseconds": 83,
                         "errorMessage": "",
                         "functionName": "fill",
-                        "line": 205
+                        "line": 221
                     },
                     {
                         "codegenSuccessfull": true,
-                        "column": 36,
-                        "durationMicroseconds": 95,
+                        "column": 32,
+                        "durationMicroseconds": 86,
                         "errorMessage": "",
                         "functionName": "width",
-                        "line": 210
+                        "line": 240
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 48,
+                        "durationMicroseconds": 121,
+                        "errorMessage": "",
+                        "functionName": "onCompleted",
+                        "line": 248
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 56,
+                        "durationMicroseconds": 69,
+                        "errorMessage": "Cannot access value for name index",
+                        "functionName": "duration",
+                        "line": 254
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 59,
+                        "durationMicroseconds": 78,
+                        "errorMessage": "",
+                        "functionName": "target",
+                        "line": 256
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 59,
+                        "durationMicroseconds": 61,
+                        "errorMessage": "cannot convert from QQuickItem::transform with type QQuickTransform (stored as QQmlListProperty<QObject>) to QObject",
+                        "functionName": "target",
+                        "line": 257
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 44,
+                        "durationMicroseconds": 130,
+                        "errorMessage": "",
+                        "functionName": "right",
+                        "line": 262
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 53,
+                        "durationMicroseconds": 119,
+                        "errorMessage": "",
+                        "functionName": "verticalCenter",
+                        "line": 263
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 39,
-                        "durationMicroseconds": 79,
-                        "errorMessage": "Cannot access value for name title",
-                        "functionName": "text",
-                        "line": 214
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 40,
-                        "durationMicroseconds": 313,
-                        "errorMessage": "",
-                        "functionName": "width",
-                        "line": 216
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 40,
-                        "durationMicroseconds": 93,
-                        "errorMessage": "",
-                        "functionName": "elide",
-                        "line": 217
-                    },
-                    {
-                        "codegenSuccessfull": false,
-                        "column": 39,
-                        "durationMicroseconds": 183,
+                        "durationMicroseconds": 186,
                         "errorMessage": "Cannot access value for name mood",
                         "functionName": "text",
-                        "line": 222
+                        "line": 266
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 40,
-                        "durationMicroseconds": 160,
+                        "durationMicroseconds": 236,
                         "errorMessage": "Cannot access value for name mood",
                         "functionName": "color",
-                        "line": 223
+                        "line": 267
                     },
                     {
                         "codegenSuccessfull": false,
@@ -345,79 +409,119 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Cannot resolve property type  for binding on onClicked.",
                         "functionName": "onClicked",
-                        "line": 229
+                        "line": 273
                     },
                     {
                         "codegenSuccessfull": true,
-                        "column": 36,
-                        "durationMicroseconds": 105,
-                        "errorMessage": "",
-                        "functionName": "width",
-                        "line": 234
-                    },
-                    {
-                        "codegenSuccessfull": false,
-                        "column": 35,
-                        "durationMicroseconds": 217,
-                        "errorMessage": "Cannot access value for name content",
-                        "functionName": "text",
-                        "line": 235
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 36,
-                        "durationMicroseconds": 93,
-                        "errorMessage": "",
-                        "functionName": "elide",
-                        "line": 236
-                    },
-                    {
-                        "codegenSuccessfull": false,
-                        "column": 36,
-                        "durationMicroseconds": 85,
-                        "errorMessage": "Cannot access value for name noteTitle",
-                        "functionName": "onClicked",
-                        "line": 242
-                    },
-                    {
-                        "codegenSuccessfull": true,
-                        "column": 39,
-                        "durationMicroseconds": 67,
+                        "column": 43,
+                        "durationMicroseconds": 94,
                         "errorMessage": "",
                         "functionName": "fill",
-                        "line": 241
+                        "line": 280
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 40,
+                        "durationMicroseconds": 114,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 285
                     },
                     {
                         "codegenSuccessfull": false,
-                        "column": 32,
-                        "durationMicroseconds": 165,
-                        "errorMessage": "method loadNotes cannot be resolved.",
-                        "functionName": "onCompleted",
-                        "line": 252
+                        "column": 43,
+                        "durationMicroseconds": 102,
+                        "errorMessage": "Cannot access value for name title",
+                        "functionName": "text",
+                        "line": 290
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 44,
+                        "durationMicroseconds": 318,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 293
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 44,
+                        "durationMicroseconds": 98,
+                        "errorMessage": "",
+                        "functionName": "elide",
+                        "line": 294
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 51,
+                        "durationMicroseconds": 136,
+                        "errorMessage": "",
+                        "functionName": "left",
+                        "line": 289
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 40,
+                        "durationMicroseconds": 97,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 299
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 39,
+                        "durationMicroseconds": 218,
+                        "errorMessage": "Cannot access value for name content",
+                        "functionName": "text",
+                        "line": 301
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 40,
+                        "durationMicroseconds": 94,
+                        "errorMessage": "",
+                        "functionName": "elide",
+                        "line": 302
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 40,
+                        "durationMicroseconds": 88,
+                        "errorMessage": "Cannot access value for name noteTitle",
+                        "functionName": "onClicked",
+                        "line": 308
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 43,
+                        "durationMicroseconds": 70,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 307
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 19,
-                        "durationMicroseconds": 207,
+                        "durationMicroseconds": 94,
                         "errorMessage": "",
                         "functionName": "fileMode",
-                        "line": 355
+                        "line": 422
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 22,
-                        "durationMicroseconds": 205,
+                        "durationMicroseconds": 186,
                         "errorMessage": "",
                         "functionName": "nameFilters",
-                        "line": 356
+                        "line": 423
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 21,
-                        "durationMicroseconds": 215,
+                        "durationMicroseconds": 154,
                         "errorMessage": "Cannot find name musicFile",
                         "functionName": "onAccepted",
-                        "line": 357
+                        "line": 424
                     },
                     {
                         "codegenSuccessfull": false,
@@ -425,15 +529,15 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Cannot resolve property type  for binding on display.",
                         "functionName": "display",
-                        "line": 382
+                        "line": 449
                     },
                     {
                         "codegenSuccessfull": false,
-                        "column": 24,
+                        "column": 20,
                         "durationMicroseconds": 0,
                         "errorMessage": "Cannot resolve property type  for binding on onClicked.",
                         "functionName": "onClicked",
-                        "line": 384
+                        "line": 451
                     },
                     {
                         "codegenSuccessfull": false,
@@ -441,7 +545,7 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Cannot resolve property type  for binding on top.",
                         "functionName": "top",
-                        "line": 376
+                        "line": 443
                     },
                     {
                         "codegenSuccessfull": false,
@@ -449,23 +553,23 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Cannot resolve property type  for binding on right.",
                         "functionName": "right",
-                        "line": 377
+                        "line": 444
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 12,
-                        "durationMicroseconds": 265,
+                        "durationMicroseconds": 280,
                         "errorMessage": "",
                         "functionName": "x",
-                        "line": 390
+                        "line": 457
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 29,
-                        "durationMicroseconds": 134,
+                        "durationMicroseconds": 124,
                         "errorMessage": "",
                         "functionName": "verticalCenter",
-                        "line": 392
+                        "line": 459
                     },
                     {
                         "codegenSuccessfull": false,
@@ -473,7 +577,7 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Cannot resolve property type  for binding on onClicked.",
                         "functionName": "onClicked",
-                        "line": 400
+                        "line": 487
                     },
                     {
                         "codegenSuccessfull": false,
@@ -481,79 +585,103 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Cannot resolve property type  for binding on horizontalCenter.",
                         "functionName": "horizontalCenter",
-                        "line": 396
+                        "line": 463
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 27,
+                        "durationMicroseconds": 131,
+                        "errorMessage": "",
+                        "functionName": "onEntered",
+                        "line": 475
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 26,
+                        "durationMicroseconds": 129,
+                        "errorMessage": "",
+                        "functionName": "onExited",
+                        "line": 476
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 30,
+                        "durationMicroseconds": 62,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 474
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 23,
-                        "durationMicroseconds": 98,
+                        "durationMicroseconds": 92,
                         "errorMessage": "",
                         "functionName": "fillMode",
-                        "line": 417
+                        "line": 484
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 21,
-                        "durationMicroseconds": 405,
+                        "durationMicroseconds": 360,
                         "errorMessage": "",
                         "functionName": "source",
-                        "line": 418
+                        "line": 485
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 31,
-                        "durationMicroseconds": 95,
+                        "durationMicroseconds": 65,
                         "errorMessage": "",
                         "functionName": "centerIn",
-                        "line": 414
+                        "line": 481
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 15,
-                        "durationMicroseconds": 102,
+                        "durationMicroseconds": 87,
                         "errorMessage": "Cannot access value for name musicFile",
                         "functionName": "text",
-                        "line": 423
+                        "line": 497
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 35,
-                        "durationMicroseconds": 167,
+                        "durationMicroseconds": 133,
                         "errorMessage": "",
                         "functionName": "horizontalCenter",
-                        "line": 422
+                        "line": 496
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 29,
-                        "durationMicroseconds": 129,
+                        "durationMicroseconds": 124,
                         "errorMessage": "",
                         "functionName": "verticalCenter",
-                        "line": 434
+                        "line": 509
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 20,
-                        "durationMicroseconds": 114,
+                        "durationMicroseconds": 118,
                         "errorMessage": "",
                         "functionName": "right",
-                        "line": 435
+                        "line": 510
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 37,
-                        "durationMicroseconds": 120,
+                        "durationMicroseconds": 132,
                         "errorMessage": "",
                         "functionName": "verticalCenter",
-                        "line": 444
+                        "line": 518
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 24,
-                        "durationMicroseconds": 1100,
+                        "durationMicroseconds": 1149,
                         "errorMessage": "Cannot generate efficient code for LoadClosure",
                         "functionName": "model",
-                        "line": 449
+                        "line": 522
                     },
                     {
                         "codegenSuccessfull": false,
@@ -561,47 +689,87 @@
                         "durationMicroseconds": 0,
                         "errorMessage": "Cannot resolve property type  for binding on onClicked.",
                         "functionName": "onClicked",
-                        "line": 484
+                        "line": 572
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 49,
-                        "durationMicroseconds": 123,
+                        "durationMicroseconds": 128,
                         "errorMessage": "",
                         "functionName": "verticalCenter",
-                        "line": 469
+                        "line": 541
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 37,
-                        "durationMicroseconds": 208,
+                        "durationMicroseconds": 202,
                         "errorMessage": "Cannot access value for name modelData",
                         "functionName": "source",
-                        "line": 472
+                        "line": 544
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 36,
-                        "durationMicroseconds": 192,
+                        "durationMicroseconds": 177,
                         "errorMessage": "Cannot access value for name modelData",
                         "functionName": "width",
-                        "line": 473
+                        "line": 545
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 53,
+                        "durationMicroseconds": 164,
+                        "errorMessage": "",
+                        "functionName": "verticalCenter",
+                        "line": 547
                     },
                     {
                         "codegenSuccessfull": false,
                         "column": 35,
-                        "durationMicroseconds": 218,
+                        "durationMicroseconds": 220,
                         "errorMessage": "Cannot access value for name modelData",
                         "functionName": "text",
-                        "line": 478
+                        "line": 553
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 53,
+                        "durationMicroseconds": 129,
+                        "errorMessage": "",
+                        "functionName": "verticalCenter",
+                        "line": 556
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 40,
+                        "durationMicroseconds": 28,
+                        "errorMessage": "Type (component in /Users/admin/Documents/GitHub/Sphera_QT/Sphera/build/Qt_6_8_0_for_macOS-Debug/Main.qml)::parent with type QQuickItem does not have a property color for writing",
+                        "functionName": "onEntered",
+                        "line": 566
+                    },
+                    {
+                        "codegenSuccessfull": false,
+                        "column": 39,
+                        "durationMicroseconds": 19,
+                        "errorMessage": "Type (component in /Users/admin/Documents/GitHub/Sphera_QT/Sphera/build/Qt_6_8_0_for_macOS-Debug/Main.qml)::parent with type QQuickItem does not have a property color for writing",
+                        "functionName": "onExited",
+                        "line": 567
+                    },
+                    {
+                        "codegenSuccessfull": true,
+                        "column": 43,
+                        "durationMicroseconds": 79,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 565
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 16,
-                        "durationMicroseconds": 98,
+                        "durationMicroseconds": 96,
                         "errorMessage": "",
                         "functionName": "width",
-                        "line": 512
+                        "line": 601
                     },
                     {
                         "codegenSuccessfull": true,
@@ -609,15 +777,15 @@
                         "durationMicroseconds": 84,
                         "errorMessage": "",
                         "functionName": "height",
-                        "line": 513
+                        "line": 602
                     },
                     {
                         "codegenSuccessfull": true,
                         "column": 28,
-                        "durationMicroseconds": 78,
+                        "durationMicroseconds": 74,
                         "errorMessage": "",
                         "functionName": "onCompleted",
-                        "line": 517
+                        "line": 606
                     }
                 ],
                 "filepath": "/Users/admin/Documents/GitHub/Sphera_QT/Sphera/build/Qt_6_8_0_for_macOS-Debug/Main.qml"

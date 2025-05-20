@@ -22,7 +22,6 @@ int main(int argc, char *argv[])
         Qt::QueuedConnection);
 
     const QUrl url(QStringLiteral("qrc:/Main.qml"));
-
     engine.loadFromModule("Sphera", "Main");
 
     return app.exec();

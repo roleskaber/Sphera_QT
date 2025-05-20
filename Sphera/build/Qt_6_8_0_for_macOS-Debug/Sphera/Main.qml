@@ -1,8 +1,9 @@
-import QtQuick
-import QtQuick.Layouts
-import QtQuick.Controls
+import QtQuick 2.15
+import QtQuick.Controls 2.15
+import QtQuick.Layouts 1.15
 
 import QtMultimedia
+
 import QtQuick.Dialogs
 import QtQuick.LocalStorage 2.0
 
@@ -34,7 +35,9 @@ Window {
         height: 500
         color: "white"
         visible: false
+
         ListView {
+            spacing: 18
             Layout.fillWidth: true
             anchors.fill: parent
             model: musicModel
@@ -43,7 +46,7 @@ Window {
                 height: 40
                 Rectangle {
                     width: parent.width == null ? 0 : parent.width
-                    height: 44
+                    height: 60
                     color: "#EEEEEE"
                     anchors {
                     }
@@ -59,7 +62,8 @@ Window {
                         }
                         spacing: 10
                         Button {
-                            text: "Играть"
+                            text: ""
+                            icon.source: "Icons/play.svg"
                             onClicked: {
                                 musicFile = path
                                 player.source = musicFile
@@ -138,85 +142,125 @@ Window {
             }
         }
     }
-
     Window {
         id: book
-        width: 800
-        height: 500
-        color: "white"
+        width: 1000
+        height: 600
+        color: "#75938F"
         visible: false
 
         ColumnLayout {
             anchors.fill: parent
-            spacing: 10
+            spacing: 0 // Убрали промежутки между элементами
 
-            RowLayout {
+            // Область создания заметки (теперь с z-индексом)
+            Rectangle {
+                id: createNoteArea
                 Layout.fillWidth: true
-                spacing: 10
+                implicitHeight: column.implicitHeight + 40
+                color: "#75938F"
+                z: 1 // Ниже чем заметки
+                opacity: 1
+                Behavior on opacity { NumberAnimation { duration: 300 } }
 
-                TextField {
-                    id: noteTitle
-                    Layout.fillWidth: true
-                    placeholderText: "Название заметки"
-                }
+                Column {
+                    id: column
+                    anchors.fill: parent
+                    anchors.margins: 20
+                    spacing: 10
 
-                SpinBox {
-                    id: moodRating
-                    from: 1
-                    to: 10
-                    value: 5
-                }
+                    Row {
+                        width: parent.width
+                        spacing: 10
 
-                Button {
-                    text: "Добавить"
-                    onClicked: {
-                        if (noteTitle.text.trim() !== "") {
-                            saveNote(noteTitle.text, noteContent.text, moodRating.value)
-                            loadNotes()
-                            noteTitle.text = ""
-                            noteContent.text = ""
-                            moodRating.value = 5
+                        TextField {
+                            id: noteTitle
+                            width: parent.width - moodRating.width - addButton.width - 20
+                            placeholderText: "Написать"
                         }
+
+                        SpinBox {
+                            id: moodRating
+                            from: 1
+                            to: 10
+                            value: 5
+                        }
+
+                        Button {
+                            id: addButton
+                            text: "Добавить"
+                            onClicked: {
+                                if (noteTitle.text.trim() !== "") {
+                                    saveNote(noteTitle.text, noteContent.text, moodRating.value)
+                                    loadNotes()
+                                    noteTitle.text = ""
+                                    noteContent.text = ""
+                                    moodRating.value = 5
+                                }
+                            }
+                        }
+                    }
+
+                    TextArea {
+                        id: noteContent
+                        width: parent.width
+                        height: 150
+                        placeholderText: "Содержание заметки..."
                     }
                 }
             }
 
-            TextArea {
-                id: noteContent
+            // Контейнер для ListView с заметками (теперь с отрицательными отступами)
+            Item {
                 Layout.fillWidth: true
                 Layout.fillHeight: true
-                placeholderText: "Содержание заметки..."
-            }
+                z: 2 // Выше чем область создания
 
-            ListView {
-                id: notesList
-                Layout.fillWidth: true
-                Layout.preferredHeight: 200
-                model: notesModel
-                spacing: 5
+                ListView {
+                    id: notesList
+                    anchors.fill: parent
+                    anchors.topMargin: 0 // Заметки будут заходить сверху
+                    rightMargin: 20
+                    leftMargin: 20
+                    model: notesModel
+                    spacing: 5
+                    clip: false
 
-                delegate: Rectangle {
-                    width: parent.width
-                    height: 80
-                    color: "#EEEEEE"
-                    radius: 5
+                    // Обработчик скролла
+                    onContentYChanged: {
+                        if (contentY > 20) {
+                            createNoteArea.opacity = 0.7
+                        } else {
+                            createNoteArea.opacity = 1.0
+                        }
+                    }
 
-                    Column {
-                        anchors.fill: parent
-                        anchors.margins: 5
-                        spacing: 2
+                    delegate: Rectangle {
+                        id: noteDelegate
+                        width: parent.width
+                        height: 80
+                        color: "#EEEEEE"
+                        radius: 5
+                        opacity: 0
+                        transform: Translate { y: 20 }
+
+                        // Анимация появления
+                        Component.onCompleted: {
+                            appearAnimation.start()
+                        }
+
+                        SequentialAnimation {
+                            id: appearAnimation
+                            PauseAnimation { duration: index * 100 }
+                            ParallelAnimation {
+                                NumberAnimation { target: noteDelegate; property: "opacity"; to: 1; duration: 300 }
+                                NumberAnimation { target: noteDelegate.transform; property: "y"; to: 0; duration: 300 }
+                            }
+                        }
 
                         Row {
-                            width: parent.width
-                            spacing: 10
-
-                            Text {
-                                text: title
-                                font.bold: true
-                                width: parent.width - moodText.width - 40
-                                elide: Text.ElideRight
-                            }
-
+                            anchors.right: parent.right
+                            anchors.verticalCenter: parent.verticalCenter
                             Text {
                                 id: moodText
                                 text: "Настроение: " + mood
@@ -230,52 +274,75 @@ Window {
                             }
                         }
 
-                        Text {
-                            width: parent.width
-                            text: content.length > 100 ? content.substring(0, 100) + "..." : content
-                            elide: Text.ElideRight
-                        }
-                    }
+                        Column {
+                            topPadding: 20
+                            bottomPadding: 20
+                            anchors.fill: parent
+                            anchors.margins: 5
+                            spacing: 4
 
-                    MouseArea {
-                        anchors.fill: parent
-                        onClicked: {
-                            noteTitle.text = title
-                            noteContent.text = content
-                            moodRating.value = mood
+                            Row {
+                                width: parent.width
+                                spacing: 30
+
+                                Text {
+                                    anchors.left: parent.left
+                                    text: title
+                                    font.bold: true
+                                    font.pixelSize: 20
+                                    width: parent.width - moodText.width - 40
+                                    elide: Text.ElideRight
+                                }
+                            }
+
+                            Text {
+                                width: parent.width
+                                font.pixelSize: 16
+                                text: content.length > 100 ? content.substring(0, 100) + "..." : content
+                                elide: Text.ElideRight
+                            }
+                        }
+
+                        MouseArea {
+                            anchors.fill: parent
+                            onClicked: {
+                                noteTitle.text = title
+                                noteContent.text = content
+                                moodRating.value = mood
+
+
+
+                            }
                         }
                     }
                 }
             }
         }
 
-        Component.onCompleted: loadNotes()
-    }
+        // Остальные модели и функции...
+        ListModel {
+            id: musicModel
+        }
 
-    ListModel {
-        id: musicModel
-    }
+        ListModel {
+            id: notesModel
+        }
 
-    ListModel {
-        id: notesModel
-    }
+        ListModel {
+            id: favoritesModel
+        }
 
-    ListModel {
-        id: favoritesModel
+
     }
 
     function loadMusicCatalog() {
         musicModel.clear()
         var db = LocalStorage.openDatabaseSync("MusicDB", "1.0", "Music Database", 1000000)
         db.transaction(function(tx) {
-            // Create favorites table if not exists
             tx.executeSql('CREATE TABLE IF NOT EXISTS favorites (path TEXT PRIMARY KEY)')
-
-            // Load all music files
             var result = tx.executeSql('SELECT path FROM music')
             for (var i = 0; i < result.rows.length; i++) {
                 var path = result.rows.item(i).path
-                // Check if this path is in favorites
                 var favResult = tx.executeSql('SELECT 1 FROM favorites WHERE path = ?', [path])
                 var isFavorite = favResult.rows.length > 0
                 musicModel.append({
@@ -381,7 +448,7 @@ Window {
         icon.color: "white"
         display: Button.IconOnly
         text: ""
-            onClicked: fileDialog.open()
+        onClicked: fileDialog.open()
     }
 
     Column {
@@ -397,18 +464,18 @@ Window {
         width: 70
         height: 70
 
-        onClicked: {
-            if (player.playbackState === MediaPlayer.PlayingState) {
-                player.pause()
-            } else {
-                player.play()
-            }
-        }
+
 
         background: Rectangle {
             radius: 10
             color: "#D7D7D7"
             opacity: 0
+            MouseArea {
+               anchors.fill: parent; hoverEnabled: true
+               onEntered: parent.opacity = 0.3
+               onExited: parent.opacity = 0
+           }
+
         }
         Image {
             anchors.centerIn: parent
@@ -416,6 +483,13 @@ Window {
             height: 56
             fillMode: Image.Pad
             source: player.playbackState === MediaPlayer.PlayingState ? "Icons/pause.svg" : "Icons/play.svg"
+        }
+        onClicked: {
+            if (player.playbackState === MediaPlayer.PlayingState) {
+                player.pause()
+            } else {
+                player.play()
+            }
         }
     }
     Text {
@@ -425,6 +499,7 @@ Window {
         opacity: 60
         color: "white"
     }
+
     }
 
     Rectangle {
@@ -435,34 +510,31 @@ Window {
             right: parent.right
             rightMargin: 44
         }
-
         radius: 10
         color: "#848D8B"
         Column {
             topPadding: 20
             bottomPadding: 20
             anchors.verticalCenter: parent.verticalCenter
-            spacing: 5
+            spacing: 3
 
-            // Общий компонент для всех кнопок
             Repeater {
                 model: [
                     { icon: "Icons/stack.svg", text: "Коллекция", width: 30, handler: function() { loadFavorites(); favoritesWindow.show() } },
-                    { icon: "Icons/timelapse.svg", text: "История", width: 27, handler: function() { loadMusicCatalog(); musicCatalog.show() } },
+                    { icon: "Icons/timelapse.svg", text: "История", width: 29, handler: function() { loadMusicCatalog(); musicCatalog.show() } },
                     { icon: "Icons/book.svg", text: "Дневник", width: 28, handler: function() { book.show() } },
                     { icon: "Icons/settings.svg", text: "Настройки", width: 26 }
                 ]
 
                 Button {
-                    Layout.preferredWidth: 271
-                    Layout.preferredHeight: 50
+
+                    width: 263
+                    height: 40
 
 
-                    background: Rectangle {
-                        color: "transparent"
-                    }
 
                     contentItem: Row {
+
 
                         spacing: 25
                         leftPadding: 30
@@ -472,16 +544,33 @@ Window {
                             source: modelData.icon
                             width: modelData.width
                             height: 26
+                            anchors.verticalCenter: parent.verticalCenter
+                            z : 2
+
                         }
 
                         Text {
                             text: modelData.text
                             font.pixelSize: 20
                             color: "white"
+                            anchors.verticalCenter: parent.verticalCenter
+                            z: 2
                         }
                     }
 
+                    background: Rectangle {
+                        radius: 7
+                        color: "transparent"
+                         MouseArea {
+                            anchors.fill: parent; hoverEnabled: true
+                            onEntered: parent.color = '#767F7D'
+                            onExited: parent.color = 'transparent'
+                        }
+                        z: -1
+                    }
+
                     onClicked: if (modelData.handler) modelData.handler()
+
                 }
             }
         }
